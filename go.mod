@@ -1,4 +1,4 @@
-module github.com/moov-io/go-sftp
+module github.com/bobTheBuilder7/go-sftp
 
 go 1.23.0
 
