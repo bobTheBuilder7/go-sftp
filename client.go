@@ -112,7 +112,7 @@ func (c *client) connection() (*sftp.Client, error) {
 	// Setup our SFTP client
 	var opts = []sftp.ClientOption{
 		sftp.MaxConcurrentRequestsPerFile(c.cfg.MaxConnections),
-		sftp.UseConcurrentWrites(true),
+		// sftp.UseConcurrentWrites(true),
 		sftp.UseConcurrentReads(true),
 	}
 	if c.cfg.PacketSize > 0 {
